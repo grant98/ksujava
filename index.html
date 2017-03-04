@@ -8,8 +8,7 @@
 
 <body>
 
-	<h1>0</h1>
-	<h2>wildcats</h2>
+	<img src="http://placekitten.com/500/301">
 	
 	<div>
 		<button id="decrease"> - </button>
@@ -20,16 +19,19 @@
 
 	<script type="text/javascript">
 	
-	var wildcat = 0;
+	var address ="http://placekitten.com/500/";
+	var picIndex = 301;
 
 	$('button').click(function(){
 		
 		if($(this).attr('id')==='increase'){
-			wildcat = wildcat + 1;
+			picIndex = picIndex + 1;
 		} else {
-			wildcat = wildcat - 1;
+			picIndex = picIndex - 1;
 		}
-		$('h1').text(wildcat);
+
+		var combine = address + picIndex
+		$('img').attr("src", combine);
 	});
 			
 
