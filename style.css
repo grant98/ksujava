@@ -1,4 +1,11 @@
-body {
-	text-align: center;
-	padding: 100px;
+.chart {
+	background-color: #dadada;
+	min-width: 200px;
+	min-height: 350px;
+}
+
+
+.bar {
+	fill: #000;
+	height: 30px;
 }
